@@ -1,0 +1,28 @@
+
+### .gitignore
+
+Para garantir que você não comete arquivos indesejados no repositório Git, crie um arquivo `.gitignore` com o seguinte conteúdo:
+
+
+
+**Enunciado: Sistema de Controle de Estoque**
+
+O projeto consiste na implementação de um sistema básico de controle de estoque utilizando um banco de dados MySQL. O sistema deve permitir a gestão de fornecedores, produtos e pedidos de reposição.
+
+**Objetivos:**
+1. **Criar e Configurar o Banco de Dados**: Estruturar o banco de dados `SistemaControleEstoque` com as tabelas `Fornecedores`, `Produtos` e `PedidosReposicao`.
+2. **Gerenciar Dados**: Inserir dados iniciais nas tabelas e executar consultas para visualizar e atualizar informações.
+3. **Operações Básicas**:
+   - Consultar produtos em estoque.
+   - Consultar pedidos de reposição.
+   - Obter informações combinadas sobre produtos e fornecedores.
+   - Atualizar a quantidade de produtos em estoque.
+   - Excluir produtos descontinuados.
+
+**Entregáveis:**
+- Script SQL para criação e configuração do banco de dados.
+- Consultas SQL exemplares para operações comuns.
+- Arquivo README com instruções de uso.
+- Arquivo .gitignore para gerenciar arquivos do projeto.
+
+Certifique-se de seguir as melhores práticas de desenvolvimento e segurança ao trabalhar com dados sensíveis e ao implementar as funcionalidades do sistema.
