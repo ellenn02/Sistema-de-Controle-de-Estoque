@@ -1,0 +1,43 @@
+# Sistema de Controle de Estoque
+
+Este projeto implementa um sistema básico de controle de estoque utilizando MySQL. Ele abrange as operações essenciais para gerenciar produtos, fornecedores e pedidos de reposição.
+
+## Estrutura do Banco de Dados
+
+O banco de dados `SistemaControleEstoque` é composto pelas seguintes tabelas:
+
+1. **Fornecedores**
+   - `FornecedorID` (INT, AUTO_INCREMENT, PRIMARY KEY): Identificador único do fornecedor.
+   - `Nome` (VARCHAR(100), NOT NULL): Nome do fornecedor.
+   - `Contato` (VARCHAR(100)): Nome do contato.
+   - `Telefone` (VARCHAR(20)): Número de telefone.
+
+2. **Produtos**
+   - `ProdutoID` (INT, AUTO_INCREMENT, PRIMARY KEY): Identificador único do produto.
+   - `Nome` (VARCHAR(100), NOT NULL): Nome do produto.
+   - `Descricao` (TEXT): Descrição do produto.
+   - `QuantidadeEstoque` (INT, DEFAULT 0): Quantidade atual em estoque.
+   - `Preco` (DECIMAL(10, 2), NOT NULL): Preço do produto.
+   - `FornecedorID` (INT): Relaciona o produto a um fornecedor.
+
+3. **PedidosReposicao**
+   - `PedidoID` (INT, AUTO_INCREMENT, PRIMARY KEY): Identificador único do pedido de reposição.
+   - `ProdutoID` (INT): Identifica o produto que está sendo reposto.
+   - `Quantidade` (INT, NOT NULL): Quantidade de reposição.
+   - `DataPedido` (DATE, NOT NULL): Data do pedido de reposição.
+
+## Como Executar
+
+1. **Configurar o Banco de Dados**
+
+   Execute o script SQL fornecido para criar o banco de dados e as tabelas, e para inserir dados iniciais:
+
+   ```sql
+   -- Criação e configuração do banco de dados
+   DROP DATABASE SistemaControleEstoque;
+   CREATE DATABASE SistemaControleEstoque;
+   SET SQL_SAFE_UPDATES = 0;
+   USE SistemaControleEstoque;
+
+   -- Criação das tabelas e inserção dos dados
+   -- [Inserir aqui o restante do script SQL]
